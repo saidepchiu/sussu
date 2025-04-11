@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../lab7"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Asm"
+	}
+}

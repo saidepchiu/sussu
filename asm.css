@@ -1,0 +1,265 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #2b2b2b;
+    color: #f5f5f5;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(45deg, #3a3a3a, #505050);
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.header nav ul li {
+    margin: 0 15px;
+}
+
+.header nav ul li a {
+    color: #ff9800;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.header nav ul li a:hover {
+    background: rgba(255, 152, 0, 0.2);
+}
+
+/* Banner */
+.banner {
+    background: url('https://source.unsplash.com/1600x900/?school') no-repeat center center/cover;
+    height: 300px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .overlay {
+    background: url('anh1.png') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner .overlay h2 {
+    color: #ff9800;
+    font-size: 36px;
+    text-shadow: 3px 3px 5px rgba(255, 152, 0, 0.5);
+    font-weight: bold;
+}
+
+/* Container */
+.container {
+    width: 85%;
+    margin: 20px auto;
+}
+
+/* Giới thiệu */
+.intro {
+    background: #3a3a3a;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.2);
+    text-align: center;
+}
+
+/* Tin tức */
+.news {
+    background: #3a3a3a;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.2);
+    margin-top: 20px;
+}
+
+.news-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news-item {
+    background: #4a4a4a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.2);
+    flex: 1 1 calc(33.333% - 20px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+}
+
+.news-item h4 {
+    color: #ff9800;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.news-item p {
+    margin-top: 5px;
+    color: #c0c0c0;
+}
+
+.news-item a {
+    display: inline-block;
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background: #ff9800;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.news-item a:hover {
+    background: #e68900;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background: #505050;
+    color: #ff9800;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+/* Định dạng dropdown */
+/* Định dạng dropdown */
+.dropdown {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #4a4a4a;
+    list-style: none;
+    width: 200px;
+    box-shadow: 0px 4px 10px rgba(255, 152, 0, 0.2);
+    border-radius: 5px;
+    padding: 5px 0;
+    z-index: 1000;
+}
+
+
+/* Menu */
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.submenu li {
+    width: 100%;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+    white-space: nowrap;
+}
+
+.submenu li a:hover {
+    background: #ff9800;
+}
+
+
+/* Hiển thị submenu khi hover */
+.dropdown:hover .submenu {
+    display: flex;
+}
+    .news-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+/* Địa chỉ & bản đồ */
+.location {
+    background: #3a3a3a;
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.2);
+}
+
+.map-container {
+    margin-top: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+}
+
+/* Video sections */
+.video-section {
+    background: #3a3a3a;
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.2);
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
